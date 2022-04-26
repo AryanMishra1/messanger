@@ -1,0 +1,86 @@
+.Logo {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.userDP {
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+}
+
+.activeUsersContainer .activeUsersLabel {
+  font-size: 0.9rem;
+  color: lightblue;
+}
+.activeUsersContainer .activeUser {
+  border: none;
+  padding: 0 1rem;
+  transition: 0.5s;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #fff;
+}
+.activeUsersContainer .activeUser:hover {
+  box-shadow: 0 0 0.5rem lightblue;
+}
+.activeUsersContainer .newMessage {
+  font-size: 1.2rem;
+  color: yellow;
+  font-weight: bold;
+}
+.activeUsersContainer .visible {
+  color: #fff;
+}
+.activeUsersContainer .createGroup {
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: 0.2s ease;
+  border: none;
+  border-radius: 12px;
+}
+.activeUsersContainer .createGroup .createGroupIcon {
+  margin: 0;
+  color: #001529;
+}
+.activeUsersContainer .createGroup:hover {
+  box-shadow: 0 0 0.5rem #fff;
+}
+.activeUsersContainer .newGroupNameContainer {
+  margin: 1rem 0;
+  display: flex;
+}
+.activeUsersContainer .newGroupNameContainer .newGroupName {
+  max-width: 70%;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.activeUsersContainer .newGroupNameContainer .newGroupBtn {
+  max-width: 30%;
+  cursor: pointer;
+}
+.activeUsersContainer .selectActiveUsersContainer {
+  display: flex;
+  flex-direction: column;
+}
+.activeUsersContainer .selectActiveUsersContainer .ActiveUsersContainer {
+  display: grid;
+}
+.activeUsersContainer .selectActiveUsersContainer .ActiveUsersContainer .selectActiveUser {
+  cursor: pointer;
+  margin: 0.3rem 0;
+  box-shadow: 0 0 1rem lightgray;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+.activeUsersContainer .selectActiveUsersContainer .ActiveUsersContainer .selectActiveUser:hover {
+  box-shadow: 0 0 0.5rem lightblue inset;
+}
+.activeUsersContainer .selectActiveUsersContainer .selectUserBtn {
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}/*# sourceMappingURL=Home.css.map */

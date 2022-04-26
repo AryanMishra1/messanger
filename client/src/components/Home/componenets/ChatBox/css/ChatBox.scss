@@ -1,0 +1,188 @@
+.ChatBoxMainContainer{
+    background: lightblue;
+
+    .ChatBoxContainer{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        .usernameContainer{
+            background: #49206e;
+    
+            .user{
+                margin : 1rem;
+                color : #fff;
+                font-size: 1.4rem;
+            }
+        }
+
+        .inviteContainer{
+            display: flex;
+            box-shadow: 0 0 1rem #49206e;
+
+            .invite{
+                background: #fff;
+                box-shadow: 0 0 1rem #49206e;
+                border-bottom-left-radius: 12px;
+                margin-left: auto;
+                border: none;
+                cursor: pointer;
+
+                &:hover{
+                    background: lightblue;
+                }
+            }
+
+            .inviteLabel{
+                text-align: center;
+                margin: auto;
+            }
+
+            .inviteUsersContainer{
+                padding: 0.2rem 0;
+                width: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+                .invitedUser{
+                    border: none;
+                    box-shadow: 0 0 1rem #001529;
+                    border-radius: 12px;
+                    padding: 0 1rem;
+                    transition: 0.5s;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    color: #49206e;
+                    
+                    &:hover{
+                        box-shadow: 0 0 0.5rem #49206e;
+                    }
+                }
+            }
+        }
+    
+        .ChatBox{
+            margin: 1rem 0;
+            min-width: 100%;
+            min-height: 60vh;
+            background: lightblue;
+            display: flex;
+            flex-direction: column;
+
+            .message{
+                margin: 0.3rem 1rem;
+                padding: 0.5rem 0;
+                color: #49206e;
+                border-radius: 12px;
+                max-width: 40%;
+
+                .messageSender{
+                    font-weight: bold;
+                    margin: 0 0.5rem;
+                    font-size: 0.8rem;
+                    padding: 0;
+                    border-bottom: 0.5px solid #fff;
+                }
+
+                .messageContent{
+                    margin: 0 0.5rem;
+                }
+
+                #joinedMsg{
+                    text-align: center;
+                    padding: 0 1rem;
+                    margin: auto;
+                }
+
+                .imageContent, .videoContent{
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .invitationContainer{
+                    display: flex;
+                    flex-direction: column;
+
+                    .invitationMsg{
+                        padding: 0.3rem 1rem;
+                    }
+
+                    .invitationBtn{
+                        margin: auto;
+                        padding: 0.5rem 2rem;
+                        font-weight: bold;
+                        color: #49206e;
+                        box-shadow: 0 0 0.4rem #49206e;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .messageReceived {
+                background:#f7e0c1;
+                margin-right: auto;
+            }
+
+            .messageSent {
+                background: #f7e0c1;
+                margin-left: auto;
+            }
+        }
+    
+        .inputContainer{
+            margin-top: auto;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            position: sticky;
+            bottom: 0;
+
+            .chatControl{
+                display: flex;
+                justify-content: space-evenly;
+                min-width: 100%;
+
+                .emojis{
+                    padding: 0.5rem 1rem;
+                    margin-right: auto;
+                }
+    
+                .textInput{
+                    border: none;
+                    margin: 0;
+                    flex: 1;
+                }
+
+                .selectFile{
+                    display: flex;
+
+                    #imageInput, #videoInput{
+                        display: none;
+                    }
+
+                    .fileInput{
+                        padding: 0.5rem;
+                        cursor: pointer;
+                    }
+                }
+
+
+                .sendMessage{
+                    background: lightblue;
+                    border: none;
+                    border-radius: 12px;
+                    color: #001529;
+                    font-weight: bold;
+                    padding: 0.3rem 1rem;
+                }
+
+                .sendMessage:hover{
+                    box-shadow: 0 0 1rem #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

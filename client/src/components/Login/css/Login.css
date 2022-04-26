@@ -1,0 +1,18 @@
+.loginFormContainer {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+  flex-direction: column;
+}
+.loginFormContainer h1 {
+  text-align: center;
+  padding: 1rem 0;
+  background: #001529;
+  color: #fff;
+}
+.loginFormContainer .ant-form {
+  border-radius: 12px;
+  margin: auto;
+  padding: 3rem;
+  box-shadow: 0 0 0.8rem #001529;
+}/*# sourceMappingURL=Login.css.map */

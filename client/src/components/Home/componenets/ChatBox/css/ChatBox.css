@@ -1,0 +1,158 @@
+.ChatBoxMainContainer {
+  background: lightblue;
+}
+.ChatBoxMainContainer .ChatBoxContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ChatBoxMainContainer .ChatBoxContainer .usernameContainer {
+  background: #49206e;
+}
+.ChatBoxMainContainer .ChatBoxContainer .usernameContainer .user {
+  margin: 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer {
+  display: flex;
+  box-shadow: 0 0 1rem #49206e;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .invite {
+  background: #fff;
+  box-shadow: 0 0 1rem #49206e;
+  border-bottom-left-radius: 12px;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .invite:hover {
+  background: lightblue;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .inviteLabel {
+  text-align: center;
+  margin: auto;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .inviteUsersContainer {
+  padding: 0.2rem 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .inviteUsersContainer .invitedUser {
+  border: none;
+  box-shadow: 0 0 1rem #001529;
+  border-radius: 12px;
+  padding: 0 1rem;
+  transition: 0.5s;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #49206e;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inviteContainer .inviteUsersContainer .invitedUser:hover {
+  box-shadow: 0 0 0.5rem #49206e;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox {
+  margin: 1rem 0;
+  min-width: 100%;
+  min-height: 60vh;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message {
+  margin: 0.3rem 1rem;
+  padding: 0.5rem 0;
+  color: #49206e;
+  border-radius: 12px;
+  max-width: 40%;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .messageSender {
+  font-weight: bold;
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  padding: 0;
+  border-bottom: 0.5px solid #fff;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .messageContent {
+  margin: 0 0.5rem;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message #joinedMsg {
+  text-align: center;
+  padding: 0 1rem;
+  margin: auto;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .imageContent, .ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .videoContent {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .invitationContainer {
+  display: flex;
+  flex-direction: column;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .invitationContainer .invitationMsg {
+  padding: 0.3rem 1rem;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .message .invitationContainer .invitationBtn {
+  margin: auto;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  color: #49206e;
+  box-shadow: 0 0 0.4rem #49206e;
+  cursor: pointer;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .messageReceived {
+  background: #f7e0c1;
+  margin-right: auto;
+}
+.ChatBoxMainContainer .ChatBoxContainer .ChatBox .messageSent {
+  background: #f7e0c1;
+  margin-left: auto;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer {
+  margin-top: auto;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100%;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .emojis {
+  padding: 0.5rem 1rem;
+  margin-right: auto;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .textInput {
+  border: none;
+  margin: 0;
+  flex: 1;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .selectFile {
+  display: flex;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .selectFile #imageInput, .ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .selectFile #videoInput {
+  display: none;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .selectFile .fileInput {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .sendMessage {
+  background: lightblue;
+  border: none;
+  border-radius: 12px;
+  color: #001529;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+}
+.ChatBoxMainContainer .ChatBoxContainer .inputContainer .chatControl .sendMessage:hover {
+  box-shadow: 0 0 1rem #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=ChatBox.css.map */
