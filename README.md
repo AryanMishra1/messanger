@@ -1,4 +1,4 @@
-# messanger
+# messenger
 Run the server on localhost "npm run dev".
 
 Get into client directory "cd client".
