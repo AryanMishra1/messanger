@@ -10,7 +10,7 @@ import { FiSend } from 'react-icons/fi';
 
 const ChatBox = ({user}) => {
 
-    const { socket, username, allChats, setAllChats, setNewMessage, activeUsers } = useContext(LoginContext);
+    const { socket, username, allChats, allGroups, setAllChats, setNewMessage, activeUsers } = useContext(LoginContext);
 
     const [emojis, setEmojis] = useState(false);
     const [message, setMessage] = useState({ text : '', media : {}});
@@ -28,10 +28,12 @@ const ChatBox = ({user}) => {
     });
 
     const sendMessage = () => {
+        const receivers = user.users ? [...({...(allGroups.filter(group => group.id === user.id))}[0].users)] : user;
+        console.log(receivers);
         const messageData = {
             group : user.users ? true : false,
             id : user.users ? user.id : socket.id,
-            receiver : user.users ? [...(user.users.filter(u => u.id !== socket.id))] : user,
+            receiver : receivers,
             sender : {
                 username : username,
                 id : socket.id

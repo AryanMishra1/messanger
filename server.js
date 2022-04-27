@@ -31,7 +31,9 @@ io.on('connection', (socket) => {
     socket.on('newMessage', (message) => {
         if(message.group) {
             for(let i = 0; i<message.receiver.length; i++) {
-                io.to(message.receiver[i].id).emit('newMessage', message);
+                if(message.receiver[i].id !== message.sender.id) {
+                    io.to(message.receiver[i].id).emit('newMessage', message);
+                }
             }
         } else {
             io.to(message.receiver.id).emit('newMessage', message);

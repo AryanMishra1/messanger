@@ -18,7 +18,7 @@ const Home = () => {
     const [chats, setChats] = useState(false);
     const [userChat, setUserChat] = useState();
 
-    useEffect(() => console.log('CleanUp!'), [newMessage, allChats]);
+    useEffect(() => console.log('CleanUp!'), [newMessage, allChats, allGroups]);
 
     const createGroup = () => socket.emit('createGroup', newGroup);
 

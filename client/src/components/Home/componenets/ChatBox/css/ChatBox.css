@@ -16,7 +16,7 @@
 }
 .ChatBoxMainContainer .ChatBoxContainer .inviteContainer {
   display: flex;
-  box-shadow: 0 0 1rem #49206e;
+  box-shadow: 0 0 1rem #49206e inset;
 }
 .ChatBoxMainContainer .ChatBoxContainer .inviteContainer .invite {
   background: #fff;
@@ -53,12 +53,13 @@
   box-shadow: 0 0 0.5rem #49206e;
 }
 .ChatBoxMainContainer .ChatBoxContainer .ChatBox {
-  margin: 1rem 0;
+  margin: 0;
   min-width: 100%;
-  min-height: 60vh;
+  height: 65vh;
   background: lightblue;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 .ChatBoxMainContainer .ChatBoxContainer .ChatBox .message {
   margin: 0.3rem 1rem;

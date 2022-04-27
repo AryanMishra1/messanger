@@ -41,7 +41,7 @@ const App = () => {
       setAllChats(prevState => {
         const newAllChats = prevState;
         newAllChats[newGroup.id] = {
-          newMessage : false,
+          newMessage : true,
           chats : []
         };
         return newAllChats;
@@ -71,6 +71,8 @@ const App = () => {
       })
     })
   }, []);
+
+  useEffect(() => console.log('CleanUp!'), [newMessage, allChats, allGroups]);
 
   return (
     <div className="App">
